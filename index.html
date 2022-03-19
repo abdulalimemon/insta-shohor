@@ -68,6 +68,14 @@
                 browser has a built-in interpreter that reads the JS code it finds on the page and runs it.
             </p>
             <h2>What does javascript event loop do?</h2>
+            <p>Javascript event loop is a constantly running process that monitors both the callback queue and the call
+                stack. An event loop is something that pulls stuff out of the queue and places it into the function
+                execution stack whenever the function stack becomes empty. The event loop finding the call stack empty
+                takes the task at the top of the event queue and sends it to the call stack. Javascript event loop
+                facilitates this process. It continuously checks whether or not the call stack is empty. If the call
+                stack is empty, new functions are added to the event queue. If the call stack isn't empty, then the
+                current function call is processed.
+            </p>
         </div>
     </section>
     <footer></footer>
